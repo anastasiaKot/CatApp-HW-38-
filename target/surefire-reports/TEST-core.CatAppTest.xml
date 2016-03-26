@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="4" name="core.CatAppTest" time="0.01" errors="0" skipped="2">
+<testsuite tests="10" failures="4" name="core.CatAppTest" time="0.008" errors="0" skipped="2">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib"/>
@@ -26,7 +26,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/Users/anastasia/Documents/Java_projects/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf941189607825051295.tmp"/>
+    <property name="classworlds.conf" value="/Users/anastasia/Documents/Java_projects/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8418040085966284371.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/anastasia/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -62,13 +62,13 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="core.CatAppTest" name="test_04_assertSame_Positive" time="0.002"/>
-  <testcase classname="core.CatAppTest" name="test_05_assertSame_Negative" time="0.003">
-    <failure message="Should be the same expected same:&lt;14&gt; was not:&lt;125&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Should be the same expected same:&lt;14&gt; was not:&lt;125&gt;
+  <testcase classname="core.CatAppTest" name="test_04_assertSame_Positive" time="0.003"/>
+  <testcase classname="core.CatAppTest" name="test_05_assertSame_Negative" time="0.002">
+    <failure message="Integer not the same. expected same:&lt;5&gt; was not:&lt;55&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Integer not the same. expected same:&lt;5&gt; was not:&lt;55&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotSame(Assert.java:828)
 	at org.junit.Assert.assertSame(Assert.java:771)
-	at core.CatAppTest.test_05_assertSame_Negative(CatAppTest.java:72)
+	at core.CatAppTest.test_05_assertSame_Negative(CatAppTest.java:49)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,20 +103,12 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>Before method will execute before every test method
-After method will execute after every test method
-</system-out>
   </testcase>
-  <testcase classname="core.CatAppTest" name="test_07_assertFalse_Positive" time="0"/>
-  <testcase classname="core.CatAppTest" name="test_03_assertEquals_Ignored" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="core.CatAppTest" name="test_09_assertTrue_positive" time="0"/>
-  <testcase classname="core.CatAppTest" name="test_10_assertTrue_negative" time="0.001">
-    <failure message="No, it is not true!" type="java.lang.AssertionError">java.lang.AssertionError: No, it is not true!
+  <testcase classname="core.CatAppTest" name="test_07_assertFalse_Positive" time="0">
+    <failure message="Boolean should be false" type="java.lang.AssertionError">java.lang.AssertionError: Boolean should be false
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.assertTrue(Assert.java:41)
-	at core.CatAppTest.test_10_assertTrue_negative(CatAppTest.java:104)
+	at core.CatAppTest.test_07_assertFalse_Positive(CatAppTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,18 +143,59 @@ After method will execute after every test method
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>Before method will execute before every test method
-After method will execute after every test method
-</system-out>
   </testcase>
-  <testcase classname="core.CatAppTest" name="test_06_assertSame_Ignored" time="0.001">
+  <testcase classname="core.CatAppTest" name="test_03_assertEquals_Ignored" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="core.CatAppTest" name="test_09_assertTrue_positive" time="0.001">
+    <failure message="Boolean should be true" type="java.lang.AssertionError">java.lang.AssertionError: Boolean should be true
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at core.CatAppTest.test_09_assertTrue_positive(CatAppTest.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+  </testcase>
+  <testcase classname="core.CatAppTest" name="test_10_assertTrue_negative" time="0"/>
+  <testcase classname="core.CatAppTest" name="test_06_assertSame_Ignored" time="0">
     <skipped/>
   </testcase>
   <testcase classname="core.CatAppTest" name="test_01_assertEquals_Positive" time="0"/>
-  <testcase classname="core.CatAppTest" name="test_02_asertEquals_Negative" time="0.002">
-    <failure message="Test_01_assertEquals_Positive expected:&lt;[bla]&gt; but was:&lt;[ok]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: Test_01_assertEquals_Positive expected:&lt;[bla]&gt; but was:&lt;[ok]&gt;
+  <testcase classname="core.CatAppTest" name="test_02_asertEquals_Negative" time="0.001">
+    <failure message="String not the same expected:&lt;Testing JUnit 4[4]&gt; but was:&lt;Testing JUnit 4[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: String not the same expected:&lt;Testing JUnit 4[4]&gt; but was:&lt;Testing JUnit 4[]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
-	at core.CatAppTest.test_02_asertEquals_Negative(CatAppTest.java:52)
+	at core.CatAppTest.test_02_asertEquals_Negative(CatAppTest.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -197,52 +230,6 @@ After method will execute after every test method
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
-    <system-out>Before method will execute before every test method
-After method will execute after every test method
-</system-out>
   </testcase>
-  <testcase classname="core.CatAppTest" name="test_08_assertFalse_Negative" time="0.001">
-    <failure message="No, it is not false!" type="java.lang.AssertionError">java.lang.AssertionError: No, it is not false!
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at core.CatAppTest.test_08_assertFalse_Negative(CatAppTest.java:92)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
-	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:483)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-    <system-out>Before method will execute before every test method
-After method will execute after every test method
-</system-out>
-  </testcase>
+  <testcase classname="core.CatAppTest" name="test_08_assertFalse_Negative" time="0"/>
 </testsuite>
